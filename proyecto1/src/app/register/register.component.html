@@ -1,0 +1,13 @@
+<div class="cajalog">
+    <div class="enlog">
+        <label for="">REGISTRO</label>
+    </div>
+    <form [formGroup]="form" (ngSubmit)="enviar()">
+    <input type="text" name="correo" id="111" formControlName="correo" class="cajastext cont" placeholder="Correo" required>
+    <input type="text" name="password" id="222" formControlName="password" class="cajastext cont" placeholder="Contraseña" required>
+    <input type="text" name="password2" id="333" formControlName="password2" class="cajastext cont" placeholder="validar Contraseña" required>
+    <input class="btn cont"(click)="enviar()" type="button" value="ENVIAR ">
+</form>
+    <button class="btn3 cont " type="button" (click)="login()" >ya tiene una cuenta?</button>
+    <button class="btn2 cont " (click)="password()">olvido su contraseña?</button>
+</div>

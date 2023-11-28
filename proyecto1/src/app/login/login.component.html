@@ -1,0 +1,15 @@
+
+<div class="cajalog">
+            <div class="enlog">
+                <label for="">INICIO DE SESION</label>
+            </div>
+        <form  [formGroup]="form" (ngSubmit)="enviar()" >
+            <input type="text" name="correo" id="1" formControlName="correo" class="cajastext cont" placeholder="Correo" required>
+    <input type="text" name="password" id="2" formControlName="password" class="cajastext cont" placeholder="Contraseña" required>
+            <input class="btn cont" (click)="enviar()" type="button" value="INGRESAR ">
+            
+        </form>
+            <button class="btn3 cont "  (click)="register()">aun no tiene una cuenta?</button>
+            <button class="btn2 cont " (click)="password()">olvido su contraseña?</button>
+            
+</div>
